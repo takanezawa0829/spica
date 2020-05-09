@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* すべてのwebページに適用される */
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    text-align: left;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2{
+    text-align: left;
+    margin: 10px 20px 60px 20px;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
+}
+h3{
+    text-align: left;
+    margin: 10px 20px 25px 20px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
+}
+p,a,span{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Noto Serif JP', serif;
+}
+li a{
+    font-family: 'Quicksand', sans-serif;
+}
+/*ヘッダー*/
+.header{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.header img{
+    zoom: 25%;
+}
+.header ul{
+    text-align: right;
+    padding-top: 3px;
+    
+}
+.header li{
+    list-style: none;
+    float: right;
+    padding-right: 60px;
+}
+a{
+    color: black;
+    text-transform: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: lightskyblue;
+}
+a:active{
+    color: blue;
+}
+/*home*/
+.key_visual{
+    position: relative;
+}
+.key_visual img{
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+.key_visual p{
+    width: 100%;
+    max-width: 960px;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    line-height: 5vw;
+}
+.home_works h2{
+    text-align: center;
+    margin: 50px 20px 40px 20px;
+}
+.home_works_item img{
+    margin: 20px;
+    width: 28%;
+    float: left;
+    border: solid 1px lightgray;
+}
+.home_blog h2{
+    text-align: center;
+    margin: 50px 20px 40px 20px;
+}
+.home_blog{
+    clear: both;
+    padding-top: 10px;
+}
+.home_blog_item{
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin: 20px;
+    overflow-wrap: break-word;
+    text-align: right;
+}
+.home_blog_item img{
+    width: 100%;
+}
+.home_blog_item p{
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.footer{
+    clear: both;
+}
+.footer ul{
+    text-align: right;
+    padding-top: 60px;
+    
+}
+.footer li{
+    list-style: none;
+    float: left;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+.footer p{
+    float: right;
+    padding: 0 10px 10px 10px;
+}
+/*About*/
+.introduction{
+    letter-spacing: 0.12em;
+    padding: 3px;
+}
+.introduction table{
+    margin: 15px 0;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 30px;
+}
+.introduction th{
+    width: 150px;
+    vertical-align: top;
+} 
+/*Works*/
+.works_item{
+    margin-bottom: 150px;
+    padding: 3px;
+}
+.works_item_img{
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.works_item_icon{
+    width: 11px;
+    height: 9px;
+    vertical-align: middle;
+    padding-left: 4px;
+}
+.works_item p{
+    padding-top: 20px;
+    letter-spacing: 0.12em;
+    line-height: 25px;
+}
+/*blog*/
+.blog_items img{
+    width: 45%;
+    float: left;
+    margin: 5px;
+}
+.blog_text{
+    width: 45%;
+    float: left;
+    margin: 5px 10px 5px 10px;
+    overflow-wrap: break-word;
+}
+.blog_item{
+    clear: both;
+    margin-bottom: 20px;
+}
+.days{
+    width: 100%;
+    clear: both;
+    text-align: right;
+    font-size: 12px;
+    padding: 5px 10px 5px 0px;
+    
+}
+/*スマートフォン向けCSS*/
+@media screen and (min-width:960px){
+  /*画面幅が960px以上の時*/
+  .key_visual p{
+    width: 100%;
+    max-width: 960px;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+}
+
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+.header ul{
+    text-align: right;
+    padding-top: 3px;
+}
+.header li{
+    width: 100%;
+    list-style: none;
+    clear: both;
+    padding-right: 0px;
+    margin: 0 20px 0 20px;
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+/*home*/
+.key_visual{
+    margin-top: 30px;
+}
+.key_visual p{
+    width: 100%;
+    max-width: 960px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    font-size: 1.9vw;
+    letter-spacing: 2px;
+    line-height: 5vw;
+}
+.footer li{
+    list-style: none;
+    float: left;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+.home_works_item img{
+    margin: 10px;
+    width: 44%;
+}
+.home_blog_item{
+    display: inline-block;
+    vertical-align: top;
+    width: 43%;
+    margin: 8px;
+    overflow-wrap: break-word;
+    text-align: right;
+}
+.introduction{
+    font-size: 12px;
+}
+}
+
+
